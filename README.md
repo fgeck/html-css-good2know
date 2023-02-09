@@ -14,3 +14,6 @@
 ------------
 
 ### Carousel
+
+![Preview](img/carousel.png)
+[file](components/vue/src/components/Carousel.vue)

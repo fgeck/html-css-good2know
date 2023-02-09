@@ -50,20 +50,7 @@ export default defineComponent({
 });
 </script>
 <template>
-  <!-- 
-      Accordion Component 
-      Can be used for example to build an FAQ section
-  -->
   <div class="w-[700px] mx-auto my-[100px] flex flex-col gap-y-4">
-    <!-- 
-    currently this is only the opened version of an accordion
-    single item.
-    
-    ToDo: 
-    Add wrapper to loop over data passed to 
-    component to dynamically create accordion based on data
-
-  -->
     <div
       v-for="(item, index) in accordion.items"
       :class="{ 'border-4 rounded border-t-sky-600': !item.hidden }"

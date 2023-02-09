@@ -1,5 +1,3 @@
-import { h } from "vue";
-
 export class AccordionItem {
   title: string = "";
   description: string = "";

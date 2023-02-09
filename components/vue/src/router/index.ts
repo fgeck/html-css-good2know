@@ -1,14 +1,20 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import AcordionView from "../views/Accordion.vue";
+import CarouselView from "../views/Carousel.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/",
-      name: "home",
-      component: HomeView,
+      path: "/accordion",
+      name: "Acordion",
+      component: AcordionView,
     },
+    {
+      path: "/carousel",
+      name: "carousel",
+      component: CarouselView,
+    }
   ],
 });
 
