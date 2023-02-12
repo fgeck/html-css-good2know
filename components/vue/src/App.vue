@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from "vue-router";
       <RouterLink to="/accordion">Accordion</RouterLink>
       <RouterLink to="/carousel">Carousel</RouterLink>
       <RouterLink to="/table">Table</RouterLink>
+      <RouterLink to="/pagination">Pagination</RouterLink>
     </nav>
   </header>
   <RouterView />

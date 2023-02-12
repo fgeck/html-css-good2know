@@ -25,3 +25,13 @@
 ![Preview](img/4-row-table.png)
 [file](components/vue/src/views/Table.vue)
 
+------------
+
+### Pagination
+
+!! Needs some rework:
+- dynamically change displayed pages
+- re-render on change
+
+![Preview](img/pagination.png)
+[file](components/vue/src/views/Paginatnion.vue)
