@@ -17,3 +17,11 @@
 
 ![Preview](img/carousel.png)
 [file](components/vue/src/components/Carousel.vue)
+
+------------
+
+### Table
+
+![Preview](img/4-row-table.png)
+[file](components/vue/src/views/Table.vue)
+

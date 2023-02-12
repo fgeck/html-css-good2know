@@ -7,6 +7,7 @@ import { RouterLink, RouterView } from "vue-router";
     <nav class="flex gap-x-4 ml-4 mr-4">
       <RouterLink to="/accordion">Accordion</RouterLink>
       <RouterLink to="/carousel">Carousel</RouterLink>
+      <RouterLink to="/table">Table</RouterLink>
     </nav>
   </header>
   <RouterView />
