@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AcordionView from "../views/Accordion.vue";
 import CarouselView from "../views/Carousel.vue";
 import TableView from "../views/Table.vue";
-import PaginationView from "../views/Pagination.vue";
+import PaginationView from "../views/PaginationView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

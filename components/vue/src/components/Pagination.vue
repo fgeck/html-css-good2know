@@ -6,12 +6,21 @@ import ChevronRight from "vue-material-design-icons/ChevronRight.vue";
 export default defineComponent({
   name: "Pagination",
   components: { ChevronLeft, ChevronRight },
+  emits: ["click"],
   data() {
     return {
-      currentPage: 3,
-      pageSize: 5,
-      allPages: 25,
+      currentPage: 1,
     };
+  },
+  props: {
+    allPages: {
+      type: Number,
+      default: 10,
+    },
+    pageSize: {
+      type: Number,
+      default: 1,
+    },
   },
   methods: {
     chevronLeftClicked() {
@@ -19,17 +28,22 @@ export default defineComponent({
         return;
       }
       this.currentPage--;
-      console.log(this.currentPage);
+      this.$emit("click", this.currentPage);
     },
     chevronRightClicked() {
       if (this.currentPage === this.allPages) {
         return;
       }
       this.currentPage++;
-      console.log(this.currentPage);
+      this.$emit("click", this.currentPage);
     },
     dotsClicked() {
       this.currentPage++;
+      this.$emit("click", this.currentPage);
+    },
+    changeCurrentPage(newPage: number) {
+      this.currentPage = newPage;
+      this.$emit("click", this.currentPage);
     },
   },
 });
@@ -46,8 +60,28 @@ export default defineComponent({
       />
     </button>
 
+    <!-- First Page -->
+    <!-- <button
+      :key="1"
+      class="h-[30px] w-[30px] my-0.5 rounded-full hover:bg-white hover:border hover: border-sky-600"
+      :class="{ 'bg-sky-600 text-white hover:text-black': 1 === currentPage }"
+      :disabled="1 === currentPage"
+      @click="currentPage = 1"
+    >
+      1
+    </button> -->
+
+    <!-- Current Active -->
+    <!-- <button
+      v-if="currentPage !== 1 && currentPage !== allPages"
+      class="h-[30px] w-[30px] my-0.5 rounded-full hover:bg-white hover:border hover: border-sky-600 bg-sky-600 text-white hover:text-black"
+      :disabled="true"
+    >
+      {{ currentPage }}
+    </button> -->
+
     <button
-      v-if="allPages <= 5"
+      v-if="allPages <= pageSize"
       v-for="i in allPages - 1"
       :key="i"
       class="h-[30px] w-[30px] my-0.5 rounded-full hover:bg-white hover:border hover: border-sky-600"
@@ -60,30 +94,33 @@ export default defineComponent({
 
     <button
       v-else
-      v-for="h in 5"
+      v-for="h in pageSize"
       :key="h"
       class="h-[30px] w-[30px] mx-0.5 rounded-full hover:bg-white hover:border hover:border-sky-600"
       :class="{ 'bg-sky-600 text-white hover:text-black': h === currentPage }"
       :disabled="h === currentPage"
-      @click="currentPage = h"
+      @click="changeCurrentPage(h)"
     >
       {{ h }}
     </button>
 
+    <!-- Dots -->
     <button
-      v-if="allPages > 5"
+      v-if="allPages > pageSize"
       class="h-[30px] w-[30px] rounded-full hover:bg-white hover:border hover:border-sky-600"
       @click="dotsClicked"
     >
       ...
     </button>
+
+    <!-- Last Page -->
     <button
       class="h-[30px] w-[30px] rounded-full hover:bg-white hover:border hover:border-sky-600"
       :class="{
         'bg-sky-600 text-white hover:text-black': allPages === currentPage,
       }"
       :disabled="allPages === currentPage"
-      @click="currentPage = allPages"
+      @click="changeCurrentPage(allPages)"
     >
       {{ allPages }}
     </button>
