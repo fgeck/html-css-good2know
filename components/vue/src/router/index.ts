@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import HeroView from "../views/HeroView.vue";
 import AcordionView from "../views/Accordion.vue";
 import CarouselView from "../views/Carousel.vue";
 import TableView from "../views/Table.vue";
@@ -7,6 +8,11 @@ import PaginationView from "../views/PaginationView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: "/hero",
+      name: "Hero",
+      component: HeroView,
+    },
     {
       path: "/accordion",
       name: "Acordion",

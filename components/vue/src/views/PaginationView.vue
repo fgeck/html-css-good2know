@@ -16,7 +16,14 @@ export default defineComponent({
 </script>
 
 <template>
-  <main>
-    <Pagination :allPages="10" :pageSize="5" @click="pageChanged($event)" />
-  </main>
+  <header>
+    <nav class="flex gap-x-4 ml-4 mr-4">
+      <RouterLink to="/hero">Hero</RouterLink>
+      <RouterLink to="/accordion">Accordion</RouterLink>
+      <RouterLink to="/carousel">Carousel</RouterLink>
+      <RouterLink to="/table">Table</RouterLink>
+      <RouterLink to="/pagination">Pagination</RouterLink>
+    </nav>
+  </header>
+  <Pagination :allPages="10" :pageSize="5" @click="pageChanged($event)" />
 </template>

@@ -81,7 +81,7 @@ export default defineComponent({
     >
       <ChevronRight
         class="text-sky-600 text-3xl flex content-center justify-center"
-        size="40"
+        :size="40"
       />
     </button>
     <button
@@ -90,7 +90,7 @@ export default defineComponent({
     >
       <ChevronLeft
         class="text-sky-600 text-3xl flex content-center justify-center"
-        size="40"
+        :size="40"
       />
     </button>
     <!-- Iterate over amount of slides! -->

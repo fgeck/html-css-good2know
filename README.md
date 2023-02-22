@@ -34,4 +34,11 @@
 - re-render on change
 
 ![Preview](img/pagination.png)
-[file](components/vue/src/views/Paginatnion.vue)
+[file](components/vue/src/views/PaginatnionView.vue)
+
+------------
+
+### Hero Section
+
+![Peview](img/hero.png)
+[file](components/vue/src/views/HeroView.vue)
