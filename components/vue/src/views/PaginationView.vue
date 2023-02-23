@@ -1,9 +1,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Pagination from "@/components/Pagination.vue";
+import Navbar from "../components/Navbar.vue";
+
 export default defineComponent({
   name: "PaginationView",
-  components: { Pagination },
+  components: { Pagination, Navbar },
   methods: {
     pageChanged(newPage: number) {
       // here we can receive new paginated results from backend
@@ -17,13 +19,7 @@ export default defineComponent({
 
 <template>
   <header>
-    <nav class="flex gap-x-4 ml-4 mr-4">
-      <RouterLink to="/hero">Hero</RouterLink>
-      <RouterLink to="/accordion">Accordion</RouterLink>
-      <RouterLink to="/carousel">Carousel</RouterLink>
-      <RouterLink to="/table">Table</RouterLink>
-      <RouterLink to="/pagination">Pagination</RouterLink>
-    </nav>
+    <Navbar />
   </header>
   <Pagination :allPages="10" :pageSize="5" @click="pageChanged($event)" />
 </template>

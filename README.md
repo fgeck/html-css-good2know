@@ -42,3 +42,10 @@
 
 ![Peview](img/hero.png)
 [file](components/vue/src/views/HeroView.vue)
+
+------------
+
+### Email App Layout (just for training purposes)
+
+![Preview](img/emailAppLayout.png)
+[file](components/vue/src/views/EmailAppLayoutView.vue)

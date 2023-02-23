@@ -1,21 +1,17 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Hero from "@/components/Hero.vue";
+import Navbar from "@/components/Navbar.vue";
+
 export default defineComponent({
   name: "HeroView",
-  components: { Hero },
+  components: { Hero, Navbar },
 });
 </script>
 
 <template>
   <header class="relative h-screen bg-hero bg-cover">
-    <nav class="flex gap-x-4 ml-4 mr-4 pt-4 text-white">
-      <RouterLink to="/hero">Hero</RouterLink>
-      <RouterLink to="/accordion">Accordion</RouterLink>
-      <RouterLink to="/carousel">Carousel</RouterLink>
-      <RouterLink to="/table">Table</RouterLink>
-      <RouterLink to="/pagination">Pagination</RouterLink>
-    </nav>
+    <Navbar class="text-white" />
     <div
       class="mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
     >
