@@ -1,6 +1,7 @@
 # HTML and CSS Knowledge and Notes
 
 [Important Design Rules](./designRules.md)
+[7 Steps to a great Website](./steps.md)
 
 ------------
 
