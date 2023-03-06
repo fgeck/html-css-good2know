@@ -9,8 +9,8 @@
  * 
  * 2 Colors:
  * primary/brand: #e67e22 /
- * greys: #555 /  
- * Tints:
+ * greys: #555 /  #333
+ * Tints: #fdf2e9 / #cf711f
  * Accents:
  * Shades: 
  * 
@@ -32,10 +32,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: '#555',
+        grey: '#555',
+        greyLight: '#333',
         brand: '#e67e22',
+        brandDark: '#cf711f',
+        brandVeryLight: '#fdf2e9',
       },
     },
+    fontFamily: {
+      'sans': ['Rubik', 'sans-serif']
+    }
   },
   variants: {
     extend: {},
