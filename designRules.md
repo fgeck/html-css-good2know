@@ -42,6 +42,8 @@
 - image size must be TWICE as size displayed
 - compress images (squoosh)
 - images need same dimensions or aspect ratio
+- sources: unsplash, pexels, drawkit
+- sources for persons: uifaces
 
 ## Icons
 
@@ -127,4 +129,30 @@
 - land-book.com
 - awwwards.com
 - screenlane.com
-- 
+
+
+## Responsive Design
+
+### Fluid Layouts
+
+- webpage should adapt to viewport
+- use % 
+- use max-width (if container width is larger than viewport -> use width of parent; else use max-width)
+
+
+### Responsive Units
+
+- use rem instead of px
+  - rem = root element font size; default 16px = 1 rem
+  - change default font-size -> change size of all rem elements
+- tip: set 1 rem = 10px
+- tip: set font-size to a percentage
+
+### Flexible Images
+
+- images don't scale automatically
+- use % for dimensions
+
+### Media Queries
+
+- change styles on viewport widths

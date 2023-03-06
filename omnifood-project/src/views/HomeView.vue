@@ -7,6 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <h1 class="text-lg bg-red-400">hello</h1>
-  <h2>test</h2>
+  <h1 class="text-4xl">
+    A healthy meal delivered to your door, every single day
+  </h1>
 </template>
