@@ -1,7 +1,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
-import HeroActionButton from "./HeroActionButton.vue";
-import HeroCustomerImage from "./HeroCustomerImage.vue";
+import HeroActionButton from "../../components/HeroActionButton.vue";
+import HeroCustomerImage from "../../components/HeroCustomerImage.vue";
 
 export default defineComponent({
   name: "HeroSection",

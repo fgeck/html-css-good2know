@@ -34,8 +34,10 @@ module.exports = {
       colors: {
         grey: '#555',
         greyLight: '#333',
+        greyLighter: '#ddd',
         brand: '#e67e22',
         brandDark: '#cf711f',
+        brandLight: '#fae5d3',
         brandVeryLight: '#fdf2e9',
       },
     },
