@@ -2,3 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  max-width: 81.25rem;
+  padding: 0 8rem;
+  margin: 0 auto;
+}
+
+.standard-section {
+  /* py-12 px-24 */
+  padding: 3rem 6rem;
+}
