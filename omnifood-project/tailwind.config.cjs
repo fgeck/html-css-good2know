@@ -32,6 +32,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        greyDark: '#999',
         grey: '#555',
         greyLight: '#333',
         greyLighter: '#ddd',

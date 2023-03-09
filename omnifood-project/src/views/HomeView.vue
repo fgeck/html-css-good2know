@@ -5,6 +5,7 @@ import HeroCustomerImage from "../components/HeroCustomerImage.vue";
 import Header from "../components/Header.vue";
 import HeroSection from "./sections/HeroSection.vue";
 import HowItWorksSection from "./sections/HowItWorksSection.vue";
+import FeaturedInSection from "./sections/FeaturedInSection.vue";
 
 export default defineComponent({
   name: "HomeView",
@@ -14,6 +15,7 @@ export default defineComponent({
     Header,
     HeroSection,
     HowItWorksSection,
+    FeaturedInSection,
   },
 });
 </script>
@@ -22,6 +24,7 @@ export default defineComponent({
   <Header />
   <main>
     <HeroSection />
+    <FeaturedInSection />
     <HowItWorksSection />
   </main>
 </template>
