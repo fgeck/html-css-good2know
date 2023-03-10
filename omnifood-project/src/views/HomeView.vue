@@ -8,6 +8,7 @@ import HowItWorksSection from "./sections/HowItWorksSection.vue";
 import FeaturedInSection from "./sections/FeaturedInSection.vue";
 import MealsSection from "./sections/MealsSection.vue";
 import TestimonialsSection from "./sections/TestimonialsSection.vue";
+import PricingSection from "./sections/PricingSection.vue";
 
 export default defineComponent({
   name: "HomeView",
@@ -20,6 +21,7 @@ export default defineComponent({
     FeaturedInSection,
     MealsSection,
     TestimonialsSection,
+    PricingSection,
   },
 });
 </script>
@@ -32,5 +34,6 @@ export default defineComponent({
     <HowItWorksSection />
     <MealsSection />
     <TestimonialsSection />
+    <PricingSection />
   </main>
 </template>
