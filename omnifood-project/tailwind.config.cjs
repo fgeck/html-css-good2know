@@ -34,6 +34,7 @@ module.exports = {
       colors: {
         greyDark: '#999',
         grey: '#555',
+        greyLight2: '#6f6f6f',
         greyLight: '#333',
         greyLighter: '#ddd',
         brand: '#e67e22',

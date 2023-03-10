@@ -57,12 +57,16 @@ export default defineComponent({
       />
       <!-- list of diets -->
       <div>
-        <h3 class="text-2xl font-semibold mb-4">Works with any diet:</h3>
-        <ul class="list-none flex flex-col gap-2">
-          <li v-for="diet in diets" class="flex gap-2 items-center my-1">
-            <CheckCircleOutlineIcon :size="32" fillColor="#e67e22" />
-            <span>{{ diet }}</span>
-          </li>
+        <h3 class="text-2xl font-semibold mb-4 text-center">
+          Works with any diet:
+        </h3>
+        <ul class="list-none flex flex-col gap-12 items-center">
+          <div class="flex flex-col gap-2 mt-4">
+            <li v-for="diet in diets" class="flex gap-4 items-center my-1">
+              <CheckCircleOutlineIcon :size="32" fillColor="#e67e22" />
+              <span>{{ diet }}</span>
+            </li>
+          </div>
         </ul>
       </div>
     </div>
