@@ -40,6 +40,9 @@ module.exports = {
         brandDark: '#cf711f',
         brandLight: '#fae5d3',
         brandVeryLight: '#fdf2e9',
+        green: '#51cf66',
+        lime:'#94d82d',
+        yellow: '#ffd43b',
       },
     },
     fontFamily: {
