@@ -25,8 +25,8 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-    <header class="text-center mb-12">
+  <div class="rounded-lg  w-3/4 grid grid-cols-1 p-8 ">
+    <header class="text-center  mb-12">
       <p class="text-2xl text-brandDark text-bold uppercase mb-6">{{ name }}</p>
       <p class="text-6xl text-bold mb-4">
         <span class="text-2xl mr-2">$</span>{{ price }}
@@ -41,7 +41,7 @@ export default defineComponent({
         </li>
       </div>
     </ul>
-    <div class="text-center mt-8">
+    <div class="text-center mt-8 self-end">
       <HeroActionButton
         class="transition-color duration-300 bg-brand text-white hover:bg-brandDark mr-4"
         name="Start eating well"
