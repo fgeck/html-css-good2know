@@ -11,6 +11,7 @@ import TestimonialsSection from "./sections/TestimonialsSection.vue";
 import PricingSection from "./sections/PricingSection.vue";
 import FeaturesSection from "./sections/FeaturesSection.vue";
 import CallToActionSection from "./sections/CallToActionSection.vue";
+import Footer from "../components/Footer.vue";
 
 export default defineComponent({
   name: "HomeView",
@@ -26,6 +27,7 @@ export default defineComponent({
     PricingSection,
     FeaturesSection,
     CallToActionSection,
+    Footer,
   },
 });
 </script>
@@ -42,4 +44,7 @@ export default defineComponent({
     <FeaturesSection />
     <CallToActionSection />
   </main>
+  <footer>
+    <Footer />
+  </footer>
 </template>

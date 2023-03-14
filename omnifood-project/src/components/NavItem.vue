@@ -15,7 +15,7 @@ export default defineComponent({
 <template>
   <RouterLink
     to=""
-    class="hover:text-brandDark transition-color duration-300 px-4 py-2"
+    class="hover:text-brandDark transition-color duration-300"
     active-class="text-brandDark"
     >{{ name }}</RouterLink
   >

@@ -22,7 +22,7 @@ export default defineComponent({
 
 <template>
   <section>
-    <div class="container mb-8">
+    <div class="container">
       <div class="container">
         <span
           class="block text-2xl font-normal text-brandDark uppercase mb-4 tracking-wider"
@@ -56,7 +56,7 @@ export default defineComponent({
             'Delivery is free',
             'Get access to latest recipes',
           ]"
-          class="bg-brandVeryLight justify-self-start border-2 border-brandVeryLight relative after:content-['Best_Value'] after:absolute after:top-[5%] after:right-[-10%] after:uppercase after:text-lg after:font-semibold after:bg-yellow after:py-1 after:px-6 after:rotate-45 overflow-hidden"
+          class="bg-brandVeryLight justify-self-start border-2 border-brandVeryLight relative after:content-['Best_Value'] after:absolute after:top-[5%] after:right-[-8%] after:uppercase after:text-lg after:font-semibold after:bg-yellow after:py-1 after:px-6 after:rotate-45 overflow-hidden"
         />
       </div>
     </div>
