@@ -33,7 +33,7 @@ export default defineComponent({
   </header>
   <section>
     <div class="p-[96px] h-screen">
-      <h2 class="text-3xl mb-[48px]">Some random heading</h2>
+      <h2 class="text-4xl mb-[48px]">Some random heading</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem facilis
         eveniet eligendi illo animi aut dolores tenetur aliquid, sequi nisi

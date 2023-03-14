@@ -11,6 +11,11 @@
   padding: 3rem 6rem;
 }
 
+*:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5)
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

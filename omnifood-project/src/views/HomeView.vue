@@ -10,6 +10,7 @@ import MealsSection from "./sections/MealsSection.vue";
 import TestimonialsSection from "./sections/TestimonialsSection.vue";
 import PricingSection from "./sections/PricingSection.vue";
 import FeaturesSection from "./sections/FeaturesSection.vue";
+import CallToActionSection from "./sections/CallToActionSection.vue";
 
 export default defineComponent({
   name: "HomeView",
@@ -24,6 +25,7 @@ export default defineComponent({
     TestimonialsSection,
     PricingSection,
     FeaturesSection,
+    CallToActionSection,
   },
 });
 </script>
@@ -38,5 +40,6 @@ export default defineComponent({
     <TestimonialsSection />
     <PricingSection />
     <FeaturesSection />
+    <CallToActionSection />
   </main>
 </template>
