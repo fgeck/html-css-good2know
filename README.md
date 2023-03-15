@@ -44,6 +44,11 @@ cd omnifood-project
 
 [Click Here to see the source code](./omnifood-project/)
 
+### Open Todos
+
+- responsive for mobile devices
+- on SPA navigation with effects
+
 ------------
 
 ## Reusable Vue Components created with Vue and TailwindCSS
